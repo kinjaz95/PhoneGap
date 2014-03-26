@@ -1,0 +1,5 @@
+http://www.appgyver.com/steroids
+http://maniacdev.com/2012/03/open-source-cordova-phonegap-plugin-enabling-true-native-ios-user-interfaces
+http://www.telerik.com/phonegap-ui
+http://www.adobe.com/devnet/html5/articles/native-like-ux-phonegap-app-ui.html
+http://phonegap.com/blog/2013/11/15/bringing-native/
