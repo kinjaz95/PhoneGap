@@ -30,21 +30,31 @@
     <body>
         <div class="app">
             <h1>Calculator</h1>
-			<p>Here is the calculator.</p>
-            <div id="deviceready" class="blink">
-				<a href="index.html"><Button type="button">Index</Button></a>
+			<p class="blink">Here is the calculator.</p>
+            <div id="content">
+				<input id="number1" class="inputField" type="number" value="0"/>
+				+
+				<input id="number2" class="inputField" type="number" value="0"/>
 				</br>
-				<a href="calc.html"><Button type="button">Calculator</Button></a>
+				<Button id="resultButton" class="buttonStyle"> = </Button>
 				</br>
-				<a href="image.html"><Button type="button">Image</Button></a>
-				</br>
-				<a href="website.html"><Button type="button">Website</Button></a>
+				<input id="result" type="number" disabled="true"/>
+				
             </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
         <script type="text/javascript">
             app.initialize();
+			$(document).ready(function() {
+				$('#resultButton').click(function() {
+					var number1 = parseFloat($('#number1').val());
+					var number2 = parseFloat($('#number2').val());
+					var result = number1 + number2;
+					$('#result').val(result);
+				});
+			});
         </script>
     </body>
 </html>
