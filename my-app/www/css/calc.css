@@ -113,3 +113,19 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.inputField {
+	Width: 50px;
+	margin: 0 10px 0 10px;
+}
+
+.buttonStyle {
+	Width: 75px;
+	margin-top: 10px;
+}
+
+#result {
+	Height: 50px;
+	Width: 75px;
+	margin-top: 10px;
+}
