@@ -33,16 +33,21 @@
             <div id="navigation">
 				<div id="imageHolder">
 				</div>
-				<input id="inputUrl" type="url"/>
+				<input id="inputUrl" type="url" value="http://kinocafe.files.wordpress.com/2011/08/master-cheif.jpg"/>
 				<Button id="showButton">Show Image</Button>
             </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
         <script type="text/javascript">
             app.initialize();
 			$(document).ready(function() {
-				var imageUrl = $('#inputUrl').val();
+				$('#showButton').click(function() {
+					var imageUrl = $('#inputUrl').val();
+					$('#image').remove();
+					$('#imageHolder').append('<img id="image" src="' + imageUrl + '"/>');
+				});
 			});
         </script>
     </body>
